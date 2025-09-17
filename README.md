@@ -1,22 +1,30 @@
 # Kultivate - Login & Register App
 
-A beautiful, modern Flutter application featuring innovative login and register screens with professional UI/UX design.
+A beautiful, modern Flutter application featuring innovative login and register screens with professional UI/UX design and horizontal scrolling authentication.
 
 ## Features
 
 ### 🎨 **Modern Design**
+- Image carousel with auto-scrolling every 4 seconds
+- Horizontal scrolling between login and register forms
 - Gradient backgrounds with smooth color transitions
-- Glassmorphism effects with translucent containers
-- Smooth animations and transitions
 - Professional typography and spacing
+- "Kultivate..!" branding with "Build Better Habit" tagline
 
-### 🔐 **Login Screen**
+### 🔐 **Authentication System**
+- **Single Panel Design**: Login and register forms in one seamless experience
+- **Horizontal Scrolling**: Smooth slide transitions between forms
+- **Image Carousel**: Auto-scrolling through 5 PNG images with fallback gradients
+- **Form Validation**: Comprehensive validation for all fields
+- **Loading States**: Progress indicators during authentication
+
+### 📱 **Login Screen**
 - Email and password validation
 - Password visibility toggle
 - Remember me functionality
 - Forgot password option
 - Social login buttons (Google, Facebook, Apple)
-- Loading states with progress indicators
+- "Create New Account" button for horizontal navigation
 
 ### 📝 **Register Screen**
 - First name and last name fields
@@ -25,38 +33,34 @@ A beautiful, modern Flutter application featuring innovative login and register 
 - Password confirmation matching
 - Terms and conditions agreement
 - Social registration options
+- "Already Have Account? Sign In" button for navigation
 
 ### ✨ **Animations & Interactions**
 - Fade-in animations on screen load
-- Slide transitions between screens
+- Horizontal slide transitions between forms
 - Smooth button interactions
 - Loading spinners
 - Success/error snackbar notifications
+- Auto-scrolling image carousel
 
 ### 🎯 **User Experience**
 - Form validation with helpful error messages
 - Responsive design for different screen sizes
-- Intuitive navigation flow
+- Intuitive horizontal navigation flow
 - Professional color scheme
 - Accessible design elements
-
-## Screenshots
-
-The app features:
-- **Login Screen**: Beautiful gradient background with glassmorphism login form
-- **Register Screen**: Comprehensive registration form with validation
-- **Smooth Transitions**: Elegant page transitions between screens
-- **Professional Branding**: "Kultivate" branding with tagline "Cultivate your mind, elevate your life"
+- Single-screen authentication experience
 
 ## Technical Features
 
 - **Flutter 3.35.3** (stable channel)
 - **Material Design 3** components
+- **PageView** for horizontal scrolling between forms
 - **Custom animations** with AnimationController
 - **Form validation** with comprehensive error handling
-- **Responsive layout** with proper spacing
+- **Responsive layout** with Expanded widgets
+- **Image carousel** with Timer-based auto-scrolling
 - **Professional color palette** with gradient backgrounds
-- **Modern UI patterns** including glassmorphism effects
 
 ## Getting Started
 
@@ -84,18 +88,34 @@ The app features:
 lib/
 ├── main.dart                 # App entry point
 └── screens/
-    ├── login_screen.dart     # Login screen with modern UI
-    └── register_screen.dart  # Registration screen with validation
+    ├── auth_screen.dart      # Main authentication screen with horizontal scrolling
+    ├── login_screen.dart     # Legacy login screen
+    └── register_screen.dart  # Legacy registration screen
+images/
+├── 1.png                    # Carousel image 1
+├── 2.png                    # Carousel image 2
+├── 3.png                    # Carousel image 3
+├── 4.png                    # Carousel image 4
+└── 5.png                    # Carousel image 5
 ```
 
 ## Design Philosophy
 
 The app follows modern design principles:
-- **Minimalism**: Clean, uncluttered interface
+- **Single-Screen Experience**: Login and register in one seamless flow
+- **Horizontal Navigation**: Smooth sliding between forms
+- **Visual Hierarchy**: Clear branding and form structure
 - **Accessibility**: High contrast colors and readable fonts
 - **Consistency**: Uniform spacing and component styling
 - **Professional**: Business-ready appearance
-- **Innovative**: Modern glassmorphism and gradient effects
+- **Innovative**: Modern carousel and horizontal scrolling
+
+## Key Innovations
+
+- **Horizontal Scrolling Authentication**: No separate screens, just smooth horizontal transitions
+- **Image Carousel Integration**: Visual appeal with auto-scrolling images
+- **Unified Branding**: "Kultivate..!" and "Build Better Habit" prominently displayed
+- **Seamless UX**: Single panel design reduces cognitive load
 
 ## Future Enhancements
 
@@ -105,11 +125,12 @@ The app follows modern design principles:
 - Multi-language support
 - Advanced form validation
 - User profile management
+- Image carousel customization
 
 ## License
 
-This project is created for demonstration purposes showcasing modern Flutter UI/UX design patterns.
+This project is created for demonstration purposes showcasing modern Flutter UI/UX design patterns with innovative horizontal scrolling authentication.
 
 ---
 
-**Kultivate** - *Cultivate your mind, elevate your life* 🌱✨
+**Kultivate** - *Build Better Habit* 🌱✨
