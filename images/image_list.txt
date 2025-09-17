@@ -1,0 +1,8 @@
+Image files needed for carousel:
+- 1.png (Productivity theme)
+- 2.png (Habits theme) 
+- 3.png (Goals theme)
+- 4.png (Growth theme)
+- 5.png (Learning theme)
+
+Please add these PNG image files to this folder.
