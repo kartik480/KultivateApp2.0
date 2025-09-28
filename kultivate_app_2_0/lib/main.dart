@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'screens/home_screen.dart';
 
 void main() {
   runApp(const KultivateApp());
@@ -431,6 +432,13 @@ class _LoginScreenState extends State<LoginScreen> with TickerProviderStateMixin
                             // Handle sign in logic here
                             print('Username: ${_usernameController.text}');
                             print('Password: ${_passwordController.text}');
+                            
+                            // Navigate to home screen
+                            Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(
+                                builder: (context) => const HomeScreen(),
+                              ),
+                            );
                           },
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.black,
