@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const KultivateApp());
@@ -141,15 +142,15 @@ class _LoginScreenState extends State<LoginScreen> with TickerProviderStateMixin
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        // Professional welcome message
-                        const Text(
+                        // Professional welcome message with Pacifico font
+                        Text(
                           'Kultivate..!',
-                          style: TextStyle(
+                          style: GoogleFonts.pacifico(
                             color: Colors.white,
-                            fontSize: 24,
-                            fontWeight: FontWeight.bold,
+                            fontSize: 28,
+                            fontWeight: FontWeight.w400,
                             letterSpacing: 1,
-                            shadows: [
+                            shadows: const [
                               Shadow(
                                 offset: Offset(1, 1),
                                 blurRadius: 3,
